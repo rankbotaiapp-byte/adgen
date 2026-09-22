@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RVWP Fund — Content Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rogue Valley Water & Power Fund</h1>
+  <h2>Content Generator</h2>
+
+  <select id="platform">
+    <option value="instagram">Instagram</option>
+    <option value="facebook">Facebook</option>
+    <option value="story">Story / Short</option>
+  </select>
+
+  <button onclick="renderContent()">Generate Post</button>
+
+  <textarea id="output" rows="10" readonly></textarea>
+  <button onclick="copyOutput()">Copy to Clipboard</button>
+
+  <script src="config.js"></script>
+  <script src="generator.js"></script>
+</body>
+</html>
